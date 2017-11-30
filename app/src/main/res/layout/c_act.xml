@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewCtrl"
+            type="com.zafu.jason.launchmodetest.viewctrl.ViewCtrl"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C_ACT"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:onClick="@{(view) -> viewCtrl.onClickA(view)}"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="B"
+            android:onClick="@{(view) -> viewCtrl.onClickB(view)}"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:onClick="@{(view) -> viewCtrl.onClickC(view)}"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="D"
+            android:onClick="@{(view) -> viewCtrl.onClickD(view)}"/>
+    </LinearLayout>
+</layout>
