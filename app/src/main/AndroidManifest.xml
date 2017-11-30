@@ -21,8 +21,10 @@
 
         <activity android:name=".act.AAct"
             />
-        <activity android:name=".act.BAct"/>
-        <activity android:name=".act.CAct"/>
+        <activity android:name=".act.BAct"
+            android:launchMode="singleTop"/>
+        <activity android:name=".act.CAct"
+            android:launchMode="singleInstance"/>
         <activity android:name=".act.DAct"/>
     </application>
 </manifest>

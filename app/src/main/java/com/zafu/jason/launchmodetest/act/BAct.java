@@ -1,8 +1,10 @@
 package com.zafu.jason.launchmodetest.act;
 
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.util.Log;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.zafu.jason.launchmodetest.R;
@@ -23,5 +25,11 @@ public class BAct extends BaseActivity {
         super.onCreate(savedInstanceState);
         BActBinding binding = DataBindingUtil.setContentView(this, R.layout.b_act);
         binding.setViewCtrl(new ViewCtrl());
+    }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        Log.i(getClass().getSimpleName(),"onNewIntent");
     }
 }
